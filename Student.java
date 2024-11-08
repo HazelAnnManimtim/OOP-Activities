@@ -1,17 +1,26 @@
-class Student{
-    private int Student_Id;
-    private String name;
+class student extends person {
+    private String program;
+    private int year;
 
-    public void setId(int id){
-        this.Student_Id = id;
+    public student(String name, String address, String program, int year) {
+        super(name, address);
+        this.program = program;
+        this.year = year;
     }
-    public int getId(){
-        return Student_Id;
+
+    public void setProgram(String program) {
+        this.program = program;
     }
-    public void setname(String s_name){
-        this.name = s_name;
+
+    public void setYear(int year) {
+        this.year = year;
     }
-    public String getname(){
-        return name;
+
+    public String getProgram() {
+        return program;
     }
+
+    public int getYear() {
+        return year;
     }
+}
